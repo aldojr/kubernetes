@@ -19,7 +19,7 @@ systemctl disable firewalld; systemctl stop firewalld
 ```
 swapoff -a; sed -i '/swap/d' /etc/fstab
 ```
-##### Disable SELinux
+##### Disable SELinuxnya
 ```
 setenforce 0
 sed -i --follow-symlinks 's/^SELINUX=enforcing/SELINUX=disabled/' /etc/sysconfig/selinux
